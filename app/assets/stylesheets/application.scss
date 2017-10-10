@@ -24,6 +24,10 @@ body {
   display: flex;
 }
 
+li, p {
+  line-height: 22px;
+}
+
 a {
   color: $primary-color;
   transition: color 200ms;
