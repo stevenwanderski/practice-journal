@@ -93,3 +93,20 @@ input.datepicker {
   margin: 0 25px;
   flex: 1;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  padding: 10px;
+  border-bottom: solid 2px $gray-medium;
+}
+
+td {
+  padding: 10px;
+}
+
+tr:nth-child(odd) td {
+  background: $gray-lightest;
+}
