@@ -1,0 +1,5 @@
+en:
+  time:
+    formats:
+      month_day_year: "%m/%d/%Y"
+      month_day_year_with_time: "%m/%d/%Y %l:%M%P"

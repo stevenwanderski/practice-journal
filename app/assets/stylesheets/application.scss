@@ -1,0 +1,24 @@
+/*
+ *= require jquery-ui/datepicker
+ */
+
+@import "bootstrap";
+
+.container {
+  &--main {
+    padding-top: 40px;
+  }
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+textarea {
+  height: 200px;
+}

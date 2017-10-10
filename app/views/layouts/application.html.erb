@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PracticeJournal</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0">
+      <%= link_to 'Practice Journal', latest_path %>
+    </span>
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to 'Sessions', practice_sessions_path, class: 'nav-link' %>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container container--main">
+    <%= yield %>
+  </div>
+</body>
+</html>

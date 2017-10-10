@@ -1,0 +1,31 @@
+<h1>🎯 Latest Goal</h1>
+<%= link_to 'New Practice Session', new_practice_session_path %>
+
+<hr>
+
+<%= form_for @practice_session, url: latest_path do |f| %>
+  <div class="form-group">
+    <%= f.label :goal %>
+    <%= markdown(@practice_session.goal) %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :result %>
+    <% if @practice_session.result.present? %>
+      <%= markdown(@practice_session.result) %>
+    <% else %>
+      <%= f.text_area :result, class: 'form-control' %>
+    <% end %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :date %>
+    <%= f.text_field :date,
+                      class: 'form-control datepicker',
+                      value: date_month_day_year(@practice_session.date) %>
+  </div>
+
+  <div class="form-group">
+    <%= f.button 'Save', class: 'btn btn-primary' %>
+  </div>
+<% end %>

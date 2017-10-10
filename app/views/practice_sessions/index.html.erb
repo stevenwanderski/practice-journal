@@ -1,0 +1,25 @@
+<header>
+  <%= link_to 'New Practice Session', new_practice_session_path, class: 'btn btn-primary' %>
+</header>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Goal</th>
+      <th>Result</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @practice_sessions.each do |practice_session| %>
+      <tr>
+        <td><%= date_month_day_year(practice_session.date) %></td>
+        <td><%= markdown(practice_session.goal) %></td>
+        <td><%= markdown(practice_session.result) %></td>
+        <td><%= link_to 'Edit', edit_practice_session_path(practice_session) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
