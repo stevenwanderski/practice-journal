@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'practice_sessions#index'
+  root to: redirect('/latest')
 
   get :latest, to: 'latest_session#edit'
   patch :latest, to: 'latest_session#update'
