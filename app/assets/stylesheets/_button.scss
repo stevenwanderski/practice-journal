@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  padding: 5px 10px;
+  // background: $white;
+  // color: $primary-color;
+  // border: solid 1px $primary-color;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 200ms;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  background: $primary-color;
+  color: $white;
+  border: 0;
+  -webkit-appearance: none;
+
+  &:hover {
+    background: lighten($primary-color, 10%);
+    color: $white;
+  }
+}

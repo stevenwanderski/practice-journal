@@ -1,0 +1,27 @@
+.nav {
+  background: $gray-lightest;
+  height: 100vh;
+  padding: 20px 40px;
+
+  &__logo {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  a {
+    color: $gray-medium;
+    text-decoration: none;
+    padding: 10px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: .85rem;
+
+    &:hover,
+    &.active {
+      color: $black;
+    }
+  }
+}
