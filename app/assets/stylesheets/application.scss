@@ -2,7 +2,36 @@
  *= require jquery-ui/datepicker
  */
 
-@import "bootstrap";
+@import "variables";
+@import "header";
+@import "nav";
+@import "main";
+@import "button";
+
+body, div {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+}
+
+a {
+  color: $primary-color;
+  transition: color 200ms;
+
+  &:hover {
+    color: lighten($primary-color, 15%);
+  }
+}
 
 .container {
   &--main {
@@ -10,19 +39,53 @@
   }
 }
 
-header {
-  margin-bottom: 20px;
-}
-
 label {
   font-weight: bold;
   display: block;
+  text-transform: uppercase;
+  font-size: .75rem;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  border: solid 1px $gray-light;
+  padding: 10px;
+  outline: 0;
+  transition: border 200ms;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: lighten($primary-color, 0%);
+  }
 }
 
 textarea {
   height: 200px;
 }
 
+input.datepicker {
+  max-width: 200px;
+}
+
 .btn {
   cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+.col {
+  margin: 0 25px;
+  flex: 1;
 }

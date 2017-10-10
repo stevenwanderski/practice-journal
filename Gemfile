@@ -9,7 +9,6 @@ gem 'pg'
 gem 'puma'
 gem 'awesome_print'
 gem 'factory_girl_rails'
-gem 'bootstrap', '~> 4.0.0.beta'
 
 # Automatic handling of dates formatted as "mm/dd/yyyy"
 gem 'american_date'
