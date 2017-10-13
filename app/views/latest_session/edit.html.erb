@@ -1,6 +1,6 @@
 <header class="header">
   <h1>🎯 Latest Goal</h1>
-  <%= link_to 'New Goal', new_practice_session_path, class: 'button' %>
+  <%= link_to 'Edit', edit_practice_session_path(@practice_session), class: 'button' %>
 </header>
 
 <%= form_for @practice_session, url: latest_path do |f| %>

@@ -5,13 +5,13 @@
 
   &__logo {
     font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 1rem;
+    margin-bottom: 38px;
+    font-size: 1.25rem;
     text-transform: uppercase;
     color: $black;
   }
 
-  a {
+  &__link {
     color: $gray-medium;
     text-decoration: none;
     padding: 10px 0;

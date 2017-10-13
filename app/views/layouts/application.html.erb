@@ -13,10 +13,13 @@
     <div class="nav__logo">Practice</div>
 
     <div>
-      <%= active_link_to 'Latest', latest_path %>
+      <%= active_link_to 'New Goal', new_practice_session_path, class: 'nav__link' %>
     </div>
     <div>
-      <%= active_link_to 'Sessions', practice_sessions_path %>
+      <%= active_link_to 'Latest', latest_path, class: 'nav__link' %>
+    </div>
+    <div>
+      <%= active_link_to 'Sessions', practice_sessions_path, class: 'nav__link', active: :exact %>
     </div>
   </nav>
 
