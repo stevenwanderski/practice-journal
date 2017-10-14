@@ -1,10 +1,6 @@
 class PracticeSessionsController < ApplicationController
-  def latest
-    @practice_session = PracticeSession.order(date: :desc).first
-  end
-
   def index
-    @practice_sessions = PracticeSession.order(date: :asc)
+    @practice_sessions = PracticeSession.order(created_at: :asc)
   end
 
   def create
