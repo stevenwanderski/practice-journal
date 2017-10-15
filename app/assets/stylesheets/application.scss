@@ -66,6 +66,7 @@ textarea {
   width: 100%;
   max-width: 600px;
   box-sizing: border-box;
+  -webkit-appearance: none;
 
   &:focus {
     border-color: lighten($primary-color, 0%);
